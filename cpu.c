@@ -6,17 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-struct opCode{
-
-    u8 opCode;
-    u8 addressMode;
-    u8 cycles;
-    char name[5];
-
-};
-
-
-
 cpu* createCPU(){
 
     cpu *CPU = calloc(sizeof(*CPU), 1);
@@ -29,7 +18,6 @@ cpu* createCPU(){
     return CPU;
 
 }
-
 
 void writeByte(cpu *CPU, u16 address, u8 value){
 

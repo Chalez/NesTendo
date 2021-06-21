@@ -5,9 +5,6 @@
 #ifndef NESTENDO_CPU_H
 #define NESTENDO_CPU_H
 
-#endif //NESTENDO_CPU_H
-
-
 #include <stdint.h>
 
 typedef uint8_t u8;
@@ -36,3 +33,6 @@ void writeByte(cpu *CPU, u16 address, u8 value);
 
 
 void printCPU(cpu *CPU);
+
+
+#endif NESTENDO_CPU_H
